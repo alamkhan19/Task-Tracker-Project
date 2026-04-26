@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif, Arial;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tracker-container {
+    background: #fff;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); 
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.header-accent {
+    background-color: #eb9e3e;
+    height: 40px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    color: #000;
+    line-height: 1;
+}
+
+.sort-area {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 35px 10px 35px;
+}
+
+#sortBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0 35px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    min-height: 50px;
+}
+
+.task-num {
+    font-weight: bold;
+    color: #333;
+    margin-right: 12px;
+    min-width: 25px;
+}
+
+.task-item input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+.item-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn img {
+    width: 20px;
+    height: 20px;
+    transition: filter 0.3s ease;
+}
+
+.edit-save:hover img {
+    filter: invert(45%) sepia(85%) saturate(1200%) hue-rotate(235deg) brightness(95%) contrast(100%);
+}
+
+.delete:hover img {
+    filter: brightness(0.5);
+}
+
+.add-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#addBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#addBtn img {
+    width: 150px;
+}
+
+@media (max-width: 480px) {
+    .tracker-container { width: 90%; }
+}
